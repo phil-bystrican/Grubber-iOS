@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="btn_dontShow" destination="8bY-Es-SZG" id="E46-d5-Mff"/>
+                <outlet property="view" destination="1" id="sfX-JP-OD9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="348"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edF-jl-uYX">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="58"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="GRm-ad-shW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.99607843139999996" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="0.99607843139999996" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ2-Mf-aMC">
+                    <rect key="frame" x="10" y="58" width="280" height="242"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242" id="aYb-qL-V9E"/>
+                        <constraint firstAttribute="width" constant="280" id="kIq-2F-7Pc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="lj8-yE-weI"/>
+                    </constraints>
+                    <string key="text">Grubber analyzes public tweets to determine places where you can get free food on campus. Grubber servers are constantly checking for new tweets related to free food, meaning that you will always be up to date on where to find your next free grub fix. </string>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62h-7Z-yeo">
+                    <rect key="frame" x="0.0" y="298" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.36862745099999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="msN-I0-Ddh"/>
+                        <constraint firstAttribute="width" constant="150" id="sVt-vw-BYF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="OK">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss" destination="-1" eventType="touchUpInside" id="K4K-Of-X0Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bY-Es-SZG">
+                    <rect key="frame" x="150" y="298" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.4431372549" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Hide On Launch">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dontShowAgain" destination="-1" eventType="touchUpInside" id="0ub-1o-DzU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Grubber!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gna-Gy-uaG">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="58.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8bY-Es-SZG" secondAttribute="trailing" id="CEE-Wj-Lou"/>
+                <constraint firstItem="8bY-Es-SZG" firstAttribute="bottom" secondItem="62h-7Z-yeo" secondAttribute="bottom" id="GBV-Jp-2L4"/>
+                <constraint firstItem="bZ2-Mf-aMC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="58" id="GT1-Mf-rNU"/>
+                <constraint firstItem="bZ2-Mf-aMC" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Ghs-cf-rWZ"/>
+                <constraint firstItem="62h-7Z-yeo" firstAttribute="top" secondItem="8bY-Es-SZG" secondAttribute="top" id="RGu-j3-fbU"/>
+                <constraint firstItem="edF-jl-uYX" firstAttribute="top" secondItem="1" secondAttribute="top" id="RMv-8d-ds7"/>
+                <constraint firstItem="8bY-Es-SZG" firstAttribute="leading" secondItem="62h-7Z-yeo" secondAttribute="trailing" id="XPb-eN-BmN"/>
+                <constraint firstAttribute="bottom" secondItem="62h-7Z-yeo" secondAttribute="bottom" id="XTm-0j-FAs"/>
+                <constraint firstItem="62h-7Z-yeo" firstAttribute="top" secondItem="bZ2-Mf-aMC" secondAttribute="bottom" constant="-2" id="gqD-wx-bxv"/>
+                <constraint firstItem="edF-jl-uYX" firstAttribute="leading" secondItem="62h-7Z-yeo" secondAttribute="leading" id="izD-mZ-3xF"/>
+                <constraint firstAttribute="trailing" secondItem="edF-jl-uYX" secondAttribute="trailing" id="oUp-7Z-snA"/>
+                <constraint firstItem="62h-7Z-yeo" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tdt-RW-IQT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="348" y="230"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

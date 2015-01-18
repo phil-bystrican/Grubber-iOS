@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDDA22119CDE184009D1CD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA22019CDE184009D1CD0 /* main.m */; };
+		BEDDA22419CDE184009D1CD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA22319CDE184009D1CD0 /* AppDelegate.m */; };
+		BEDDA22719CDE184009D1CD0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA22619CDE184009D1CD0 /* MapViewController.m */; };
+		BEDDA22A19CDE184009D1CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA22819CDE184009D1CD0 /* Main.storyboard */; };
+		BEDDA22C19CDE184009D1CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA22B19CDE184009D1CD0 /* Images.xcassets */; };
+		BEDDA22F19CDE184009D1CD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA22D19CDE184009D1CD0 /* LaunchScreen.xib */; };
+		BEDDA23B19CDE184009D1CD0 /* GrubberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA23A19CDE184009D1CD0 /* GrubberTests.m */; };
+		BEDDA26519CDE248009D1CD0 /* ADClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA24619CDE248009D1CD0 /* ADClusterAnnotation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BEDDA26619CDE248009D1CD0 /* ADClusterMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA24819CDE248009D1CD0 /* ADClusterMapView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BEDDA26719CDE248009D1CD0 /* ADMapCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA24A19CDE248009D1CD0 /* ADMapCluster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BEDDA26819CDE248009D1CD0 /* ADMapPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA24C19CDE248009D1CD0 /* ADMapPointAnnotation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BEDDA26919CDE248009D1CD0 /* FPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA25019CDE248009D1CD0 /* FPPopoverController.m */; };
+		BEDDA26A19CDE248009D1CD0 /* FPPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA25219CDE248009D1CD0 /* FPPopoverView.m */; };
+		BEDDA26B19CDE248009D1CD0 /* FPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA25419CDE248009D1CD0 /* FPTouchView.m */; };
+		BEDDA27519CDE971009D1CD0 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA27419CDE970009D1CD0 /* MapPin.m */; };
+		BEDDA27819CE1C8E009D1CD0 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA27719CE1C8E009D1CD0 /* DataParser.m */; };
+		BEDDA27E19CE4B0B009D1CD0 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA27A19CE4B0B009D1CD0 /* more.png */; };
+		BEDDA27F19CE4B0B009D1CD0 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA27B19CE4B0B009D1CD0 /* more@2x.png */; };
+		BEDDA28019CE4B0B009D1CD0 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA27C19CE4B0B009D1CD0 /* pin.png */; };
+		BEDDA28119CE4B0B009D1CD0 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA27D19CE4B0B009D1CD0 /* pin@2x.png */; };
+		BEDDA28519CE5FAB009D1CD0 /* PopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA28319CE5FAB009D1CD0 /* PopOverViewController.m */; };
+		BEDDA28819CE694C009D1CD0 /* PopOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA28719CE694C009D1CD0 /* PopOverViewController.xib */; };
+		BEDDA28A19CE97D3009D1CD0 /* pin-512.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA28919CE97D3009D1CD0 /* pin-512.png */; };
+		BEDDA29119CEA55E009D1CD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA28B19CEA55E009D1CD0 /* CoreGraphics.framework */; };
+		BEDDA29219CEA55E009D1CD0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA28C19CEA55E009D1CD0 /* CoreLocation.framework */; };
+		BEDDA29319CEA55E009D1CD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA28D19CEA55E009D1CD0 /* Foundation.framework */; };
+		BEDDA29419CEA55E009D1CD0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA28E19CEA55E009D1CD0 /* MapKit.framework */; };
+		BEDDA29519CEA55E009D1CD0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA28F19CEA55E009D1CD0 /* MessageUI.framework */; };
+		BEDDA29619CEA55E009D1CD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDDA29019CEA55E009D1CD0 /* UIKit.framework */; };
+		BEDDA29A19CEAF22009D1CD0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA29819CEAF22009D1CD0 /* DetailViewController.m */; };
+		BEDDA29B19CEAF22009D1CD0 /* PopupDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDDA29919CEAF22009D1CD0 /* PopupDetails.xib */; };
+		BEDDA2A119CEAF4F009D1CD0 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA29E19CEAF4F009D1CD0 /* MJPopupBackgroundView.m */; };
+		BEDDA2A219CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDA2A019CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEDDA23519CDE184009D1CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDDA21319CDE184009D1CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDDA21A19CDE184009D1CD0;
+			remoteInfo = Grubber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEDDA21B19CDE184009D1CD0 /* Grubber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grubber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDDA21F19CDE184009D1CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDDA22019CDE184009D1CD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEDDA22219CDE184009D1CD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEDDA22319CDE184009D1CD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEDDA22519CDE184009D1CD0 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BEDDA22619CDE184009D1CD0 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		BEDDA22919CDE184009D1CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEDDA22B19CDE184009D1CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEDDA22E19CDE184009D1CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BEDDA23419CDE184009D1CD0 /* GrubberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrubberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDDA23919CDE184009D1CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDDA23A19CDE184009D1CD0 /* GrubberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrubberTests.m; sourceTree = "<group>"; };
+		BEDDA24519CDE248009D1CD0 /* ADClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADClusterAnnotation.h; sourceTree = "<group>"; };
+		BEDDA24619CDE248009D1CD0 /* ADClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADClusterAnnotation.m; sourceTree = "<group>"; };
+		BEDDA24719CDE248009D1CD0 /* ADClusterMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADClusterMapView.h; sourceTree = "<group>"; };
+		BEDDA24819CDE248009D1CD0 /* ADClusterMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADClusterMapView.m; sourceTree = "<group>"; };
+		BEDDA24919CDE248009D1CD0 /* ADMapCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMapCluster.h; sourceTree = "<group>"; };
+		BEDDA24A19CDE248009D1CD0 /* ADMapCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMapCluster.m; sourceTree = "<group>"; };
+		BEDDA24B19CDE248009D1CD0 /* ADMapPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMapPointAnnotation.h; sourceTree = "<group>"; };
+		BEDDA24C19CDE248009D1CD0 /* ADMapPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMapPointAnnotation.m; sourceTree = "<group>"; };
+		BEDDA24E19CDE248009D1CD0 /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacros.h; sourceTree = "<group>"; };
+		BEDDA24F19CDE248009D1CD0 /* FPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPopoverController.h; sourceTree = "<group>"; };
+		BEDDA25019CDE248009D1CD0 /* FPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPopoverController.m; sourceTree = "<group>"; };
+		BEDDA25119CDE248009D1CD0 /* FPPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPopoverView.h; sourceTree = "<group>"; };
+		BEDDA25219CDE248009D1CD0 /* FPPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPopoverView.m; sourceTree = "<group>"; };
+		BEDDA25319CDE248009D1CD0 /* FPTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTouchView.h; sourceTree = "<group>"; };
+		BEDDA25419CDE248009D1CD0 /* FPTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTouchView.m; sourceTree = "<group>"; };
+		BEDDA27319CDE970009D1CD0 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		BEDDA27419CDE970009D1CD0 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		BEDDA27619CE1C8E009D1CD0 /* DataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParser.h; sourceTree = "<group>"; };
+		BEDDA27719CE1C8E009D1CD0 /* DataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
+		BEDDA27A19CE4B0B009D1CD0 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more.png; path = Images/more.png; sourceTree = "<group>"; };
+		BEDDA27B19CE4B0B009D1CD0 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more@2x.png"; path = "Images/more@2x.png"; sourceTree = "<group>"; };
+		BEDDA27C19CE4B0B009D1CD0 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin.png; path = Images/pin.png; sourceTree = "<group>"; };
+		BEDDA27D19CE4B0B009D1CD0 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin@2x.png"; path = "Images/pin@2x.png"; sourceTree = "<group>"; };
+		BEDDA28219CE5FAB009D1CD0 /* PopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopOverViewController.h; path = PopOver/PopOverViewController.h; sourceTree = "<group>"; };
+		BEDDA28319CE5FAB009D1CD0 /* PopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopOverViewController.m; path = PopOver/PopOverViewController.m; sourceTree = "<group>"; };
+		BEDDA28719CE694C009D1CD0 /* PopOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopOverViewController.xib; sourceTree = "<group>"; };
+		BEDDA28919CE97D3009D1CD0 /* pin-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-512.png"; sourceTree = "<group>"; };
+		BEDDA28B19CEA55E009D1CD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEDDA28C19CEA55E009D1CD0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BEDDA28D19CEA55E009D1CD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEDDA28E19CEA55E009D1CD0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BEDDA28F19CEA55E009D1CD0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		BEDDA29019CEA55E009D1CD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BEDDA29719CEAF22009D1CD0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BEDDA29819CEAF22009D1CD0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BEDDA29919CEAF22009D1CD0 /* PopupDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupDetails.xib; sourceTree = "<group>"; };
+		BEDDA29D19CEAF4F009D1CD0 /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		BEDDA29E19CEAF4F009D1CD0 /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
+		BEDDA29F19CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		BEDDA2A019CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDDA21819CDE184009D1CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDA29119CEA55E009D1CD0 /* CoreGraphics.framework in Frameworks */,
+				BEDDA29219CEA55E009D1CD0 /* CoreLocation.framework in Frameworks */,
+				BEDDA29319CEA55E009D1CD0 /* Foundation.framework in Frameworks */,
+				BEDDA29419CEA55E009D1CD0 /* MapKit.framework in Frameworks */,
+				BEDDA29519CEA55E009D1CD0 /* MessageUI.framework in Frameworks */,
+				BEDDA29619CEA55E009D1CD0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDDA23119CDE184009D1CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDDA21219CDE184009D1CD0 = {
+			isa = PBXGroup;
+			children = (
+				BEDDA28B19CEA55E009D1CD0 /* CoreGraphics.framework */,
+				BEDDA28C19CEA55E009D1CD0 /* CoreLocation.framework */,
+				BEDDA28D19CEA55E009D1CD0 /* Foundation.framework */,
+				BEDDA28E19CEA55E009D1CD0 /* MapKit.framework */,
+				BEDDA28F19CEA55E009D1CD0 /* MessageUI.framework */,
+				BEDDA29019CEA55E009D1CD0 /* UIKit.framework */,
+				BEDDA21D19CDE184009D1CD0 /* Grubber */,
+				BEDDA23719CDE184009D1CD0 /* GrubberTests */,
+				BEDDA21C19CDE184009D1CD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDDA21C19CDE184009D1CD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA21B19CDE184009D1CD0 /* Grubber.app */,
+				BEDDA23419CDE184009D1CD0 /* GrubberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDDA21D19CDE184009D1CD0 /* Grubber */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA29719CEAF22009D1CD0 /* DetailViewController.h */,
+				BEDDA29819CEAF22009D1CD0 /* DetailViewController.m */,
+				BEDDA29919CEAF22009D1CD0 /* PopupDetails.xib */,
+				BEDDA22219CDE184009D1CD0 /* AppDelegate.h */,
+				BEDDA22319CDE184009D1CD0 /* AppDelegate.m */,
+				BEDDA27619CE1C8E009D1CD0 /* DataParser.h */,
+				BEDDA27719CE1C8E009D1CD0 /* DataParser.m */,
+				BEDDA22519CDE184009D1CD0 /* MapViewController.h */,
+				BEDDA22619CDE184009D1CD0 /* MapViewController.m */,
+				BEDDA22819CDE184009D1CD0 /* Main.storyboard */,
+				BEDDA27319CDE970009D1CD0 /* MapPin.h */,
+				BEDDA27419CDE970009D1CD0 /* MapPin.m */,
+				BEDDA28219CE5FAB009D1CD0 /* PopOverViewController.h */,
+				BEDDA28319CE5FAB009D1CD0 /* PopOverViewController.m */,
+				BEDDA28719CE694C009D1CD0 /* PopOverViewController.xib */,
+				BEDDA22B19CDE184009D1CD0 /* Images.xcassets */,
+				BEDDA22D19CDE184009D1CD0 /* LaunchScreen.xib */,
+				BEDDA21E19CDE184009D1CD0 /* Supporting Files */,
+			);
+			path = Grubber;
+			sourceTree = "<group>";
+		};
+		BEDDA21E19CDE184009D1CD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA29C19CEAF4F009D1CD0 /* Popup View Base */,
+				BEDDA27919CE4AFF009D1CD0 /* Images */,
+				BEDDA24419CDE248009D1CD0 /* ADClusterMapView */,
+				BEDDA24D19CDE248009D1CD0 /* PopOver */,
+				BEDDA21F19CDE184009D1CD0 /* Info.plist */,
+				BEDDA22019CDE184009D1CD0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDDA23719CDE184009D1CD0 /* GrubberTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA23A19CDE184009D1CD0 /* GrubberTests.m */,
+				BEDDA23819CDE184009D1CD0 /* Supporting Files */,
+			);
+			path = GrubberTests;
+			sourceTree = "<group>";
+		};
+		BEDDA23819CDE184009D1CD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA23919CDE184009D1CD0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDDA24419CDE248009D1CD0 /* ADClusterMapView */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA24519CDE248009D1CD0 /* ADClusterAnnotation.h */,
+				BEDDA24619CDE248009D1CD0 /* ADClusterAnnotation.m */,
+				BEDDA24719CDE248009D1CD0 /* ADClusterMapView.h */,
+				BEDDA24819CDE248009D1CD0 /* ADClusterMapView.m */,
+				BEDDA24919CDE248009D1CD0 /* ADMapCluster.h */,
+				BEDDA24A19CDE248009D1CD0 /* ADMapCluster.m */,
+				BEDDA24B19CDE248009D1CD0 /* ADMapPointAnnotation.h */,
+				BEDDA24C19CDE248009D1CD0 /* ADMapPointAnnotation.m */,
+			);
+			path = ADClusterMapView;
+			sourceTree = "<group>";
+		};
+		BEDDA24D19CDE248009D1CD0 /* PopOver */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA24E19CDE248009D1CD0 /* ARCMacros.h */,
+				BEDDA24F19CDE248009D1CD0 /* FPPopoverController.h */,
+				BEDDA25019CDE248009D1CD0 /* FPPopoverController.m */,
+				BEDDA25119CDE248009D1CD0 /* FPPopoverView.h */,
+				BEDDA25219CDE248009D1CD0 /* FPPopoverView.m */,
+				BEDDA25319CDE248009D1CD0 /* FPTouchView.h */,
+				BEDDA25419CDE248009D1CD0 /* FPTouchView.m */,
+			);
+			path = PopOver;
+			sourceTree = "<group>";
+		};
+		BEDDA27919CE4AFF009D1CD0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA28919CE97D3009D1CD0 /* pin-512.png */,
+				BEDDA27A19CE4B0B009D1CD0 /* more.png */,
+				BEDDA27B19CE4B0B009D1CD0 /* more@2x.png */,
+				BEDDA27C19CE4B0B009D1CD0 /* pin.png */,
+				BEDDA27D19CE4B0B009D1CD0 /* pin@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BEDDA29C19CEAF4F009D1CD0 /* Popup View Base */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDA29D19CEAF4F009D1CD0 /* MJPopupBackgroundView.h */,
+				BEDDA29E19CEAF4F009D1CD0 /* MJPopupBackgroundView.m */,
+				BEDDA29F19CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.h */,
+				BEDDA2A019CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.m */,
+			);
+			path = "Popup View Base";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDDA21A19CDE184009D1CD0 /* Grubber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDDA23E19CDE184009D1CD0 /* Build configuration list for PBXNativeTarget "Grubber" */;
+			buildPhases = (
+				BEDDA21719CDE184009D1CD0 /* Sources */,
+				BEDDA21819CDE184009D1CD0 /* Frameworks */,
+				BEDDA21919CDE184009D1CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grubber;
+			productName = Grubber;
+			productReference = BEDDA21B19CDE184009D1CD0 /* Grubber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEDDA23319CDE184009D1CD0 /* GrubberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDDA24119CDE184009D1CD0 /* Build configuration list for PBXNativeTarget "GrubberTests" */;
+			buildPhases = (
+				BEDDA23019CDE184009D1CD0 /* Sources */,
+				BEDDA23119CDE184009D1CD0 /* Frameworks */,
+				BEDDA23219CDE184009D1CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDDA23619CDE184009D1CD0 /* PBXTargetDependency */,
+			);
+			name = GrubberTests;
+			productName = GrubberTests;
+			productReference = BEDDA23419CDE184009D1CD0 /* GrubberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDDA21319CDE184009D1CD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Phil Bystrican Apps";
+				TargetAttributes = {
+					BEDDA21A19CDE184009D1CD0 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 9W6V64K3PA;
+					};
+					BEDDA23319CDE184009D1CD0 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = BEDDA21A19CDE184009D1CD0;
+					};
+				};
+			};
+			buildConfigurationList = BEDDA21619CDE184009D1CD0 /* Build configuration list for PBXProject "Grubber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDDA21219CDE184009D1CD0;
+			productRefGroup = BEDDA21C19CDE184009D1CD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDDA21A19CDE184009D1CD0 /* Grubber */,
+				BEDDA23319CDE184009D1CD0 /* GrubberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDDA21919CDE184009D1CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDA28119CE4B0B009D1CD0 /* pin@2x.png in Resources */,
+				BEDDA29B19CEAF22009D1CD0 /* PopupDetails.xib in Resources */,
+				BEDDA22A19CDE184009D1CD0 /* Main.storyboard in Resources */,
+				BEDDA22F19CDE184009D1CD0 /* LaunchScreen.xib in Resources */,
+				BEDDA27E19CE4B0B009D1CD0 /* more.png in Resources */,
+				BEDDA28019CE4B0B009D1CD0 /* pin.png in Resources */,
+				BEDDA28819CE694C009D1CD0 /* PopOverViewController.xib in Resources */,
+				BEDDA22C19CDE184009D1CD0 /* Images.xcassets in Resources */,
+				BEDDA27F19CE4B0B009D1CD0 /* more@2x.png in Resources */,
+				BEDDA28A19CE97D3009D1CD0 /* pin-512.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDDA23219CDE184009D1CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDDA21719CDE184009D1CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDA27519CDE971009D1CD0 /* MapPin.m in Sources */,
+				BEDDA26719CDE248009D1CD0 /* ADMapCluster.m in Sources */,
+				BEDDA28519CE5FAB009D1CD0 /* PopOverViewController.m in Sources */,
+				BEDDA26619CDE248009D1CD0 /* ADClusterMapView.m in Sources */,
+				BEDDA22719CDE184009D1CD0 /* MapViewController.m in Sources */,
+				BEDDA2A219CEAF4F009D1CD0 /* UIViewController+MJPopupViewController.m in Sources */,
+				BEDDA22419CDE184009D1CD0 /* AppDelegate.m in Sources */,
+				BEDDA26819CDE248009D1CD0 /* ADMapPointAnnotation.m in Sources */,
+				BEDDA26919CDE248009D1CD0 /* FPPopoverController.m in Sources */,
+				BEDDA26B19CDE248009D1CD0 /* FPTouchView.m in Sources */,
+				BEDDA26A19CDE248009D1CD0 /* FPPopoverView.m in Sources */,
+				BEDDA27819CE1C8E009D1CD0 /* DataParser.m in Sources */,
+				BEDDA26519CDE248009D1CD0 /* ADClusterAnnotation.m in Sources */,
+				BEDDA22119CDE184009D1CD0 /* main.m in Sources */,
+				BEDDA29A19CEAF22009D1CD0 /* DetailViewController.m in Sources */,
+				BEDDA2A119CEAF4F009D1CD0 /* MJPopupBackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDDA23019CDE184009D1CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDA23B19CDE184009D1CD0 /* GrubberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEDDA23619CDE184009D1CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDDA21A19CDE184009D1CD0 /* Grubber */;
+			targetProxy = BEDDA23519CDE184009D1CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEDDA22819CDE184009D1CD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDDA22919CDE184009D1CD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEDDA22D19CDE184009D1CD0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDDA22E19CDE184009D1CD0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEDDA23C19CDE184009D1CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEDDA23D19CDE184009D1CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEDDA23F19CDE184009D1CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Grubber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEDDA24019CDE184009D1CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Grubber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEDDA24219CDE184009D1CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrubberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grubber.app/Grubber";
+			};
+			name = Debug;
+		};
+		BEDDA24319CDE184009D1CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrubberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grubber.app/Grubber";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDDA21619CDE184009D1CD0 /* Build configuration list for PBXProject "Grubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDDA23C19CDE184009D1CD0 /* Debug */,
+				BEDDA23D19CDE184009D1CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDDA23E19CDE184009D1CD0 /* Build configuration list for PBXNativeTarget "Grubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDDA23F19CDE184009D1CD0 /* Debug */,
+				BEDDA24019CDE184009D1CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEDDA24119CDE184009D1CD0 /* Build configuration list for PBXNativeTarget "GrubberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDDA24219CDE184009D1CD0 /* Debug */,
+				BEDDA24319CDE184009D1CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEDDA21319CDE184009D1CD0 /* Project object */;
+}
